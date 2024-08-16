@@ -34,7 +34,7 @@ class BenzerReycylerAdapter(val benzerList: ArrayList<Movie>): RecyclerView.Adap
         holder.binding.benzerMovieName.text = benzerList[position].title
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, FilmDetail::class.java)
-            intent.putExtra("Movie", benzerList[position])
+            intent.putExtra("MovieId", benzerList.get(position).id)
             it.context.startActivity(intent)
         }
 
