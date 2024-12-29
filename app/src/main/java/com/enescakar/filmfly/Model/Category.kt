@@ -1,17 +1,7 @@
-package com.enescakar.filmfly.Model
+package com.enescakar.filmfly.model
 
-import com.google.gson.annotations.SerializedName
-
-
-
-data class CategoryList (
-    val genres: List<Category>
-)
-
-
-data class Category (
-    @SerializedName("id")
-    val id: Long,
-    @SerializedName("name")
-    val name: String
-)
+data class Category(
+    val id: Int,
+    val name: String,
+    var isSelected: Boolean = false
+) 

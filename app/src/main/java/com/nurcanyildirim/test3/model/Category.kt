@@ -1,4 +1,4 @@
-package com.nurcanyildirim.test3.model
+package com.enescakar.filmfly.model
 
 data class Category(
     val id: Int,
